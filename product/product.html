@@ -26,14 +26,6 @@
 				document.getElementById("pqty").innerHTML="Enter Product Quantity";	
 			}
 		}
-		function show(){
-			var productId=document.product_form.productId.value;
-			var productName=document.product_form.productName.value;
-			var productPrice=document.product_form.productPrice.value;
-			var productQuantity=document.product_form.productQuantity.value;
-			location.href="product_details.html";
-			
-			}
 		</script>
 	</head>
 	<body>
@@ -44,7 +36,7 @@
 				<tr><td><p style="font-size:15pt; font-weight:bold;">Product Name: </p><td><input type="text" name="productName" style="height:35px; font-size:20pt;" onblur="validate_name()"><span id="pName"></span>
 				<tr><td><p style="font-size:15pt; font-weight:bold;">Product Price: </p><td><input type="number" name="productPrice" style="height:35px; font-size:20pt;" onblur="validate_price()"><span id="pp"></span>
 				<tr><td><p style="font-size:15pt; font-weight:bold;">Product Quantity: </p><td><input type="number" name="productQuantity" style="height:35px; font-size:20pt;" onblur="validate_quantity()"><span id="pqty"></span>
-				<tr><td colspan="2" align="center"><input type="submit" value="Submit" onclick="javascript:show()" style="height:35px; font-family:'georgia'; font-weight:bold; font-size:20pt;">
+				<tr><td colspan="2" align="center"><input type="submit" value="Submit" style="height:35px; font-family:'georgia'; font-weight:bold; font-size:20pt;">
 			</table>
 		</form>
 	</body>
