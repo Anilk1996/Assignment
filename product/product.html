@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<title>Product Page</title>
+		<script type="text/javascript">
+		function validate_id(){
+			var productId=document.product_form.productId.value;
+			if(productId=="" ){
+				document.getElementById("pId").innerHTML="Enter Product ID";
+			}	
+		}
+		function validate_name(){
+			var productName=document.product_form.productName.value;
+			if(productName==""){
+				document.getElementById("pName").innerHTML="Enter Product Name";
+			}
+		}
+		function validate_price(){
+			var productPrice=document.product_form.productPrice.value;
+			if(productPrice==""){
+				document.getElementById("pp").innerHTML="Enter Product Price";
+			}
+		}
+		function validate_quantity(){
+			var productQuantity=document.product_form.productQuantity.value;
+			if(productQuantity==""){
+				document.getElementById("pqty").innerHTML="Enter Product Quantity";	
+			}
+		}
+		function show(){
+			var productId=document.product_form.productId.value;
+			var productName=document.product_form.productName.value;
+			var productPrice=document.product_form.productPrice.value;
+			var productQuantity=document.product_form.productQuantity.value;
+			location.href="product_details.html";
+			
+			}
+		</script>
+	</head>
+	<body>
+		<h1 align="center" style="font-size:35pt; font-family:'georgia'; color:blue; padding:30px;">Product Page</h1>
+		<form name="product_form" action="product_details.html" >
+			<table align="center">
+				<tr><td><p style="font-size:15pt; font-weight:bold;">Product Id: </p><td><input type="number" name="productId" style="height:35px; font-size:20pt;" onblur="validate_id()"><span id="pId"></span>
+				<tr><td><p style="font-size:15pt; font-weight:bold;">Product Name: </p><td><input type="text" name="productName" style="height:35px; font-size:20pt;" onblur="validate_name()"><span id="pName"></span>
+				<tr><td><p style="font-size:15pt; font-weight:bold;">Product Price: </p><td><input type="number" name="productPrice" style="height:35px; font-size:20pt;" onblur="validate_price()"><span id="pp"></span>
+				<tr><td><p style="font-size:15pt; font-weight:bold;">Product Quantity: </p><td><input type="number" name="productQuantity" style="height:35px; font-size:20pt;" onblur="validate_quantity()"><span id="pqty"></span>
+				<tr><td colspan="2" align="center"><input type="submit" value="Submit" onclick="javascript:show()" style="height:35px; font-family:'georgia'; font-weight:bold; font-size:20pt;">
+			</table>
+		</form>
+	</body>
+</html>

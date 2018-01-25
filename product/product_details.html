@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>Product Details</title>
+		
+	</head>
+	<body>
+		<h1 align="center" style="font-size:35pt; font-family:'georgia'; color:blue; padding:30px;">Product Details</h1>
+		
+		<script>
+			var queryString = decodeURIComponent(window.location.search);
+			queryString = queryString.substring(1);
+			var queries = queryString.split("&");
+			for (var i = 0; i < queries.length; i++)
+			{
+			document.write("<p style="+"font-size:15pt; font-weight:'bold'; padding:5px"+" align="+"center"+">"+queries[i] + "<br>"+"</p>");
+			}
+		</script></p>
+	</body>
+</html>
